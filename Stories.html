@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Stories | Brian Plotts Attorney at Law P.C.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+
+        /* GENERAL TEXT SHARPENING FIX */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* BUTTON SHARPENING */
+button, a {
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+}
+
+/* HIGH CONTRAST FOR TEXT (example tweaks) */
+.text-white {
+    color: #ffffff;
+}
+
+.text-gray-300 {
+    color: #d1d5db; /* Consider #e5e7eb or #f3f4f6 for brighter text */
+}
+
+.bg-navy-900 {
+    background-color: #0a1a2f; /* Dark enough for contrast */
+}
+
+.bg-navy-700 {
+    background-color: #1e3a5f;
+}
+
+.bg-navy-800 {
+    background-color: #162b45;
+}
+
+/* Optional: Force font for crisp rendering */
+body {
+    font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+        body {
+
+
+            font-family: 'Inter', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .story-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .outcome-badge {
+            position: absolute;
+            top: -16px;
+            right: 20px;
+        }
+         body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Merriweather', serif;
+        }
+        .service-hero {
+            background-image: linear-gradient(rgba(0, 33, 71, 0.85), rgba(0, 33, 71, 0.8)), url('https://images.unsplash.com/photo-1589391886645-d52541d2a55e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .service-card {
+            transition: all 0.3s ease;
+            background-size: cover;
+            background-position: center;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        .gold-accent {
+            color: #D4AF37;
+        }
+        .navy-bg {
+            background-color: #002147;
+        }
+        .gold-bg {
+            background-color: #D4AF37;
+        }
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            transform: translateX(5px);
+        }
+         body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Merriweather', serif;
+        }
+        .about-hero {
+            background-image: linear-gradient(rgba(0, 33, 71, 0.85), rgba(0, 33, 71, 0.8)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .gold-accent {
+            color: #D4AF37;
+        }
+        .navy-bg {
+            background-color: #002147;
+        }
+        .gold-bg {
+            background-color: #D4AF37;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        .value-card {
+            transition: all 0.3s ease;
+        }
+        .value-card:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+      <nav class="navy-bg text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center">
+                            <i class="fas fa-balance-scale text-2xl gold-accent mr-2"></i>
+                            <span class="text-xl font-bold">Brian Plotts Attorney at Law P.C.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="Home.html" class="text-white font-medium hover:text-gold-300 px-3 py-2">Home</a>
+                        <a href="Service.html" class="text-white font-medium hover:text-gold-300 px-3 py-2">Services</a>
+                        <a href="Mission.html" class="text-white font-medium hover:text-gold-300 px-3 py-2">About</a>
+                        <a href="Stories.html" class="text-gold-300 font-medium border-b-2 border-gold-300 px-3 py-2">Success Stories</a>
+                        <a href="Contact.html" class="text-white font-medium hover:text-gold-300 px-3 py-2">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="Consultation.html" class="gold-bg text-navy-900 px-6 py-2 rounded-md font-medium hover:bg-yellow-600 transition duration-300">Free Consultation</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+
+      <!-- Hero Section -->
+    <section class="about-hero text-white py-24 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Real Stories of Hope and New Beginnings</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Every immigration journey is unique, but they all share one thing in common—the potential for a brighter future. Here are just a few of the lives we've been honored to help transform.</p>
+            
+        </div>
+    </section>
+
+    <!-- Introductory Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="heading-font text-3xl font-bold text-navy-900 mb-6">Why We Share These Stories</h2>
+                <p class="text-lg text-gray-700 mb-8">At Brian Plotts Attorney at Law P.C., we believe in the power of hope. These stories represent real people who faced real challenges—people just like you. While we've changed names and details to protect privacy, each outcome reflects our commitment to compassionate, strategic legal representation.</p>
+                
+                <div class="flex flex-wrap justify-center gap-6 mt-12">
+                    <div class="flex items-center bg-gray-50 px-4 py-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        <span class="text-gray-700">100% Confidential</span>
+                    </div>
+                    <div class="flex items-center bg-gray-50 px-4 py-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        <span class="text-gray-700">Real Case Outcomes</span>
+                    </div>
+                    <div class="flex items-center bg-gray-50 px-4 py-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        <span class="text-gray-700">Names Changed for Privacy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Filters -->
+    <section class="py-8 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-3">
+                <button class="bg-white text-navy-900 hover:bg-navy-900 hover:text-white px-4 py-2 rounded-full transition duration-300 border border-gray-200">All Stories</button>
+                <button class="bg-white text-navy-900 hover:bg-navy-900 hover:text-white px-4 py-2 rounded-full transition duration-300 border border-gray-200">Family Immigration</button>
+                <button class="bg-white text-navy-900 hover:bg-navy-900 hover:text-white px-4 py-2 rounded-full transition duration-300 border border-gray-200">Asylum & Protection</button>
+                <button class="bg-white text-navy-900 hover:bg-navy-900 hover:text-white px-4 py-2 rounded-full transition duration-300 border border-gray-200">Business Immigration</button>
+                <button class="bg-white text-navy-900 hover:bg-navy-900 hover:text-white px-4 py-2 rounded-full transition duration-300 border border-gray-200">Deportation Defense</button>
+                <button class="bg-white text-navy-900 hover:bg-navy-900 hover:text-white px-4 py-2 rounded-full transition duration-300 border border-gray-200">Citizenship</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Grid -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Story 1 -->
+                <div class="relative bg-white rounded-lg overflow-hidden shadow-lg story-card transition duration-300">
+                    <div class="outcome-badge bg-gold-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">APPROVED</div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-navy-100 text-navy-800 text-xs font-medium px-3 py-1 rounded-full mr-3">Marriage-Based Green Card</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-navy-900 mb-3">Reunited After Years Apart</h3>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">The Challenge:</h4>
+                            <p class="text-gray-600">"Ana" had been separated from her U.S. citizen husband for 3 years due to a previous visa denial. The couple faced intense scrutiny about the legitimacy of their marriage.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">Our Approach:</h4>
+                            <p class="text-gray-600">We meticulously documented their 8-year relationship history, addressed the prior denial concerns, and prepared them for a rigorous interview process.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">The Outcome:</h4>
+                            <p class="text-gray-600">Ana received her green card in just 11 months. She's now living with her husband and pursuing her nursing career in California.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-gold-500 mt-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-500 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                            </svg>
+                            <p class="italic text-gray-700">"After so many years of uncertainty, Liberty gave us back our future together. They treated our case with such care—like we were family."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Story 2 -->
+                <div class="relative bg-white rounded-lg overflow-hidden shadow-lg story-card transition duration-300">
+                    <div class="outcome-badge bg-gold-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">PROTECTION GRANTED</div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-navy-100 text-navy-800 text-xs font-medium px-3 py-1 rounded-full mr-3">Asylum Case</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-navy-900 mb-3">Safety After Persecution</h3>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">The Challenge:</h4>
+                            <p class="text-gray-600">"James," a journalist from East Africa, faced death threats for exposing government corruption. He entered the U.S. on a visitor visa but feared returning home.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">Our Approach:</h4>
+                            <p class="text-gray-600">We gathered extensive documentation of his work and threats, connected him with country condition experts, and prepared a detailed affidavit explaining his credible fear.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">The Outcome:</h4>
+                            <p class="text-gray-600">After a 4-hour interview, James was granted asylum. He's now safely resettled with his family and continues his journalism work.</p>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm font-medium text-gray-900">James' Story</p>
+                                    <div class="flex space-x-1 text-sm text-gray-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold-500" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                                        </svg>
+                                        <span>3 minute video testimonial</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Story 3 -->
+                <div class="relative bg-white rounded-lg overflow-hidden shadow-lg story-card transition duration-300">
+                    <div class="outcome-badge bg-gold-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">DEPORTATION STOPPED</div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-navy-100 text-navy-800 text-xs font-medium px-3 py-1 rounded-full mr-3">Cancellation of Removal</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-navy-900 mb-3">A Father's Second Chance</h3>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">The Challenge:</h4>
+                            <p class="text-gray-600">"Carlos," a construction worker and father of three U.S. citizen children, faced deportation after 18 years in the U.S. due to an old misdemeanor conviction.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">Our Approach:</h4>
+                            <p class="text-gray-600">We demonstrated his exceptional community contributions, secured pardons for the old conviction, and proved his deportation would cause exceptional hardship to his disabled daughter.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">The Outcome:</h4>
+                            <p class="text-gray-600">The immigration judge granted Cancellation of Removal. Carlos received his green card and can now provide for his family without fear.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-gold-500 mt-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-500 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                            </svg>
+                            <p class="italic text-gray-700">"I can't describe what it means to know I won't be taken from my kids. Liberty fought for me when no one else would."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Story 4 -->
+                <div class="relative bg-white rounded-lg overflow-hidden shadow-lg story-card transition duration-300">
+                    <div class="outcome-badge bg-gold-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">CITIZENSHIP APPROVED</div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-navy-100 text-navy-800 text-xs font-medium px-3 py-1 rounded-full mr-3">Naturalization</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-navy-900 mb-3">From Green Card to Citizenship</h3>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">The Challenge:</h4>
+                            <p class="text-gray-600">"Linh," a Vietnamese refugee who came to the U.S. as a child, had been a permanent resident for 20 years but feared applying for citizenship due to past minor offenses.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">Our Approach:</h4>
+                            <p class="text-gray-600">We obtained court records showing her offenses qualified as petty exceptions, prepared a detailed moral character packet highlighting her community service, and conducted extensive interview preparation.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">The Outcome:</h4>
+                            <p class="text-gray-600">Linh became a U.S. citizen at a moving ceremony surrounded by family. She registered to vote that same day.</p>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Citizenship ceremony" class="w-full h-40 object-cover rounded-lg">
+                            <p class="text-xs text-gray-500 mt-1">*Stock photo - actual client images protected for privacy</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Story 5 -->
+                <div class="relative bg-white rounded-lg overflow-hidden shadow-lg story-card transition duration-300">
+                    <div class="outcome-badge bg-gold-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">VISA GRANTED</div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-navy-100 text-navy-800 text-xs font-medium px-3 py-1 rounded-full mr-3">O-1 Extraordinary Ability</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-navy-900 mb-3">The Scientist Who Couldn't Wait</h3>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">The Challenge:</h4>
+                            <p class="text-gray-600">"Dr. Aditya," a renowned cancer researcher from India, needed to begin work at a U.S. university immediately to lead a critical study. Regular processing times would have delayed the research by 6+ months.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">Our Approach:</h4>
+                            <p class="text-gray-600">We compiled evidence of his extraordinary ability, including 200+ citations of his work, media coverage, and letters from Nobel laureates. Filed for premium processing and prepared a detailed petition showing urgent national interest.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">The Outcome:</h4>
+                            <p class="text-gray-600">O-1 visa approved in just 12 days. Dr. Aditya began his research on schedule, which has since led to breakthrough findings in early cancer detection.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-gold-500 mt-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-500 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                            </svg>
+                            <p class="italic text-gray-700">"Liberty understood the stakes of my work. Their strategic approach saved months of delays—time that translated directly into lives potentially saved."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Story 6 -->
+                <div class="relative bg-white rounded-lg overflow-hidden shadow-lg story-card transition duration-300">
+                    <div class="outcome-badge bg-gold-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">WAIVER APPROVED</div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-navy-100 text-navy-800 text-xs font-medium px-3 py-1 rounded-full mr-3">I-601 Hardship Waiver</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-navy-900 mb-3">Overcoming Past Mistakes</h3>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">The Challenge:</h4>
+                            <p class="text-gray-600">"Miguel" was barred from re-entering the U.S. for 10 years due to prior unlawful presence. His U.S. citizen wife struggled with severe depression and relied on him as her primary caregiver.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">Our Approach:</h4>
+                            <p class="text-gray-600">We worked with medical professionals to document the extreme hardship his wife would face, demonstrated his rehabilitation, and built a compelling case showing his absence would create exceptional and extremely unusual hardship.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-700 mb-1">The Outcome:</h4>
+                            <p class="text-gray-600">Waiver approved in 8 months. Miguel reunited with his wife and is now adjusting status to become a permanent resident.</p>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm font-medium text-gray-900">Miguel's Story</p>
+                                    <div class="flex space-x-1 text-sm text-gray-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gold-500" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                                        </svg>
+                                        <span>2 minute video testimonial</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confidentiality Note -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6 text-center max-w-3xl">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-navy-700 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+            <h3 class="heading-font text-xl font-bold text-navy-900 mb-4">Client Privacy Is Our Priority</h3>
+            <p class="text-gray-600">While these stories reflect real cases we've handled, all names and identifying details have been changed to protect client confidentiality. The outcomes described are specific to each case's unique circumstances and do not guarantee similar results.</p>
+        </div>
+    </section>
+
+  <!-- CTA Section -->
+<section class="py-20 bg-gradient-to-r from-navy-900 to-navy-700 text-white antialiased">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="heading-font text-4xl sm:text-5xl font-bold mb-6 tracking-tight">Your Success Story Starts Here</h2>
+        <p class="text-lg sm:text-xl max-w-2xl mx-auto mb-8 leading-relaxed">Every immigration journey begins with a single step. Let us help you take yours with confidence.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#" class="bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold py-3 px-8 rounded-lg shadow-md transition duration-300">Schedule Consultation</a>
+            <a href="#" class="border-2 border-white hover:bg-white hover:text-navy-900 font-bold py-3 px-8 rounded-lg shadow-md transition duration-300">Call Us: +17136268822</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-navy-800 text-white py-12 antialiased">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="heading-font text-xl font-bold mb-4">Brian Plotts Attorney at Law P.C.</h3>
+                <p class="text-gray-300 leading-relaxed">Guiding families and businesses through U.S. immigration with expertise and compassion since 2005.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-300 hover:text-gold-500 transition-colors duration-200">Home</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-gold-500 transition-colors duration-200">Our Services</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-gold-500 transition-colors duration-200">Our Team</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-gold-500 transition-colors duration-200">Success Stories</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-gold-500 transition-colors duration-200">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Contact</h4>
+                <address class="not-italic text-gray-300 leading-relaxed">
+                    16800 Greenspoint<br>
+                    Park Dr Suite 110s. <br>
+                    Houston, TX 77060<br><br>
+                    Phone: +17136268822<br>
+                    Email: <a href="mailto:info@plottslawfirm.com" class="hover:text-gold-500">info@plottslawfirm.com</a>
+                </address>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Office Hours</h4>
+                <p class="text-gray-300 leading-relaxed">
+                    Monday - Friday: 9am - 6pm<br>
+                    Saturday: By appointment<br>
+                    Sunday: Closed
+                </p>
+            </div>
+        </div>
+        <div class="border-t border-navy-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+            <p>© 2025 Brian Plotts Attorney at Law P.C.. All rights reserved. | 
+                <a href="#" class="hover:text-gold-500 transition-colors duration-200">Privacy Policy</a> | 
+                <a href="#" class="hover:text-gold-500 transition-colors duration-200">Disclaimer</a>
+            </p>
+            <p class="mt-2">Attorney Advertising. Prior results do not guarantee similar outcomes.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

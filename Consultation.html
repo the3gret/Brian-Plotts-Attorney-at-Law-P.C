@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Consultation | Liberty Immigration Law</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        .consultation-card {
+            box-shadow: 0 10px 30px rgba(0, 45, 98, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .consultation-card:hover {
+            box-shadow: 0 15px 35px rgba(0, 45, 98, 0.15);
+        }
+        
+        .form-input {
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .form-input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px rgba(30, 58, 138, 0.2);
+        }
+        
+        .animate-in {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+        
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+        
+        .testimonial-quote {
+            position: relative;
+        }
+        
+        .testimonial-quote:before {
+            content: "\201C";
+            font-family: Georgia, serif;
+            font-size: 60px;
+            color: #e2e8f0;
+            position: absolute;
+            left: -15px;
+            top: -15px;
+        }
+        
+        .badge {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        
+        .badge:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .consultation-layout {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+    <!-- Navigation -->
+    <nav class="bg-blue-900 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center">
+                            <i class="fas fa-passport text-3xl text-white mr-2"></i>
+                            <span class="text-xl font-bold text-white">Liberty Immigration Law</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="Home.html" class="text-white font-medium hover:text-blue-200 px-3 py-2">Home</a>
+                        <a href="Service.html" class="text-blue-200 font-medium hover:text-white px-3 py-2">Services</a>
+                        <a href="Mission.html" class="text-blue-200 font-medium hover:text-white px-3 py-2">About</a>
+                        <a href="Stories.html" class="text-blue-200 font-medium hover:text-white px-3 py-2">Success Stories</a>
+                        <a href="Contact.html" class="text-blue-200 font-medium hover:text-white px-3 py-2">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="Consultation.html" class="bg-white text-blue-900 px-6 py-2 rounded-md font-medium hover:bg-blue-100 transition duration-300">Free Consultation</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4 animate-in">Schedule Your Free Immigration Consultation Today</h1>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto animate-in delay-1">
+                Get expert guidance during a complimentary 15-30 minute consultation with our immigration attorneys. No obligation, just honest advice about your situation.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <div class="consultation-layout flex flex-col md:flex-row gap-8">
+            <!-- Left Column - Information -->
+            <div class="w-full md:w-1/2 space-y-8">
+                <!-- Who It's For Section -->
+                <div class="consultation-card bg-white rounded-xl p-6 md:p-8 animate-in">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-user-check text-blue-700 mr-3"></i> Who Should Schedule a Consultation?
+                    </h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Individuals facing deportation or removal proceedings</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Those needing family-based visa or green card assistance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Work visa applicants (H-1B, L-1, O-1, etc.)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>DACA recipients seeking renewal or options</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Anyone with questions about citizenship or naturalization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Employers needing immigration compliance help</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- What to Expect Section -->
+                <div class="consultation-card bg-white rounded-xl p-6 md:p-8 animate-in delay-1">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-clipboard-list text-blue-700 mr-3"></i> What to Expect During Your Consultation
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-700 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Case Review</h3>
+                                <p class="text-gray-600">We'll review the details of your immigration situation and any relevant documents.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-700 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-question"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Q&A Session</h3>
+                                <p class="text-gray-600">Ask any questions you have about the immigration process, timelines, and requirements.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-700 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-road"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Legal Path Options</h3>
+                                <p class="text-gray-600">We'll outline potential legal strategies and next steps for your specific case.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-700 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Fee Structure</h3>
+                                <p class="text-gray-600">If we can help, we'll explain our fee structure and payment options with complete transparency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonials -->
+                <div class="consultation-card bg-white rounded-xl p-6 md:p-8 animate-in delay-2">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-star text-blue-700 mr-3"></i> Client Testimonials
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="testimonial-quote pl-8">
+                            <p class="text-gray-700 italic mb-2">"The consultation was incredibly helpful. The attorney took time to understand my complex situation and explained all my options clearly. I finally felt hopeful about my case after months of stress."</p>
+                            <p class="font-semibold text-gray-800">— Maria G., Green Card Applicant</p>
+                        </div>
+                        <div class="testimonial-quote pl-8">
+                            <p class="text-gray-700 italic mb-2">"As an employer, I needed help with H-1B visas for my team. The free consultation gave me exactly the information I needed to proceed confidently. Their expertise saved us time and money."</p>
+                            <p class="font-semibold text-gray-800">— James R., Tech Startup Founder</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Trust Badges -->
+                    <div class="mt-8 pt-6 border-t border-gray-100">
+                        <h3 class="text-sm font-semibold text-gray-500 mb-4 text-center">RECOGNIZED & TRUSTED BY</h3>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <img src="https://www.aila.org/Content/Images/aila-logo.png" alt="AILA Member" class="h-12 badge">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/American_Bar_Association_logo.svg/1200px-American_Bar_Association_logo.svg.png" alt="ABA Member" class="h-12 badge">
+                            <img src="https://www.supremecourt.gov/opinions/11pdf/11-182.pdf" alt="State Bar Certified" class="h-12 badge">
+                            <img src="https://www.superlawyers.com/resources/images/superlawyers-badge.png" alt="Super Lawyers" class="h-12 badge">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column - Form -->
+            <div class="w-full md:w-1/2 animate-in delay-1">
+                <div class="consultation-card bg-white rounded-xl p-6 md:p-8 sticky top-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-calendar-check text-blue-700 mr-3"></i> Request Your Free Consultation
+                    </h2>
+                    
+                    <form id="consultationForm" class="space-y-5">
+                        <div>
+                            <label for="consult_name" class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+                            <input type="text" id="consult_name" name="consult_name" required 
+                                   class="form-input w-full px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label for="consult_email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                                <input type="email" id="consult_email" name="consult_email" required 
+                                       class="form-input w-full px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            
+                            <div>
+                                <label for="consult_phone" class="block text-sm font-medium text-gray-700 mb-1">Phone *</label>
+                                <input type="tel" id="consult_phone" name="consult_phone" required 
+                                       class="form-input w-full px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-500">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="consult_date" class="block text-sm font-medium text-gray-700 mb-1">Preferred Date/Time</label>
+                            <input type="text" id="consult_date" name="consult_date" placeholder="e.g., Weekday afternoons" 
+                                   class="form-input w-full px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="consult_case" class="block text-sm font-medium text-gray-700 mb-1">Case Type or Message *</label>
+                            <select id="consult_case" name="consult_case" required 
+                                    class="form-input w-full px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-500">
+                                <option value="">Select your case type</option>
+                                <option value="Deportation">Deportation/Removal Defense</option>
+                                <option value="Family Visa">Family-Based Visa/Green Card</option>
+                                <option value="Work Visa">Work Visa (H-1B, L-1, O-1, etc.)</option>
+                                <option value="DACA">DACA Renewal or Options</option>
+                                <option value="Citizenship">Citizenship/Naturalization</option>
+                                <option value="Asylum">Asylum/Refugee Status</option>
+                                <option value="Other">Other Immigration Matter</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" 
+                                    class="btn-primary w-full py-3 px-6 rounded-lg text-white font-semibold shadow-md text-lg">
+                                <i class="fas fa-calendar-alt mr-2"></i> Request Free Consultation
+                            </button>
+                        </div>
+                        
+                        <div class="text-xs text-gray-500 mt-4">
+                            <p><i class="fas fa-lock mr-1"></i> Your information is secure and will never be shared with third parties.</p>
+                        </div>
+                    </form>
+                    
+                    <div id="consultSuccess" class="hidden mt-4 p-4 bg-green-50 text-green-700 rounded-lg">
+                        <i class="fas fa-check-circle mr-2"></i> Thank you! Your consultation request has been received. We'll contact you within 24 hours to schedule your session.
+                    </div>
+                    
+                    <div id="consultError" class="hidden mt-4 p-4 bg-red-50 text-red-700 rounded-lg">
+                        <i class="fas fa-exclamation-circle mr-2"></i> <span id="consultErrorMessage">Please fill out all required fields correctly.</span>
+                    </div>
+                    
+                    <!-- Alternate Booking Options -->
+                    <div class="mt-8 pt-6 border-t border-gray-100">
+                        <h3 class="text-sm font-semibold text-gray-500 mb-4 text-center">PREFER TO BOOK ANOTHER WAY?</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <a href="tel:+12125551234" class="bg-gray-50 hover:bg-gray-100 p-4 rounded-lg text-center transition">
+                                <i class="fas fa-phone text-blue-700 text-xl mb-2"></i>
+                                <p class="font-medium">Call Us</p>
+                                <p class="text-sm text-gray-600">+1 (212) 555-1234</p>
+                            </a>
+                            <a href="mailto:consult@libertyimmigration.com" class="bg-gray-50 hover:bg-gray-100 p-4 rounded-lg text-center transition">
+                                <i class="fas fa-envelope text-blue-700 text-xl mb-2"></i>
+                                <p class="font-medium">Email Us</p>
+                                <p class="text-sm text-gray-600">consult@libertyimmigration.com</p>
+                            </a>
+                        </div>
+                        
+                        <!-- Calendly Embed Placeholder -->
+                        <div class="mt-6 bg-blue-50 rounded-lg p-4 text-center">
+                            <p class="font-medium text-blue-800 mb-2">
+                                <i class="fas fa-calendar-day mr-2"></i> Or book instantly online
+                            </p>
+                            <button class="text-blue-700 underline font-medium text-sm">
+                                View Available Consultation Times
+                            </button>
+                            <!-- In a real implementation, you would embed Calendly here -->
+                            <!-- <div class="calendly-inline-widget" data-url="https://calendly.com/your-link" style="min-width:320px;height:600px;"></div> -->
+                        </div>
+                    </div>
+                    
+                    <!-- Legal Disclaimer -->
+                    <div class="mt-6 pt-6 border-t border-gray-100 text-xs text-gray-500">
+                        <p><strong>Disclaimer:</strong> Submitting this form does not create an attorney-client relationship. Confidential or time-sensitive information should not be sent through this form. An attorney-client relationship is only formed after we evaluate your case and you sign an engagement agreement with our firm.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const consultationForm = document.getElementById('consultationForm');
+            const consultSuccess = document.getElementById('consultSuccess');
+            const consultError = document.getElementById('consultError');
+            const consultErrorMessage = document.getElementById('consultErrorMessage');
+            
+            consultationForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Reset messages
+                consultSuccess.classList.add('hidden');
+                consultError.classList.add('hidden');
+                
+                // Validate form
+                const name = document.getElementById('consult_name').value.trim();
+                const email = document.getElementById('consult_email').value.trim();
+                const phone = document.getElementById('consult_phone').value.trim();
+                const caseType = document.getElementById('consult_case').value.trim();
+                
+                // Simple validation
+                if (!name || !email || !phone || !caseType) {
+                    consultErrorMessage.textContent = 'Please fill out all required fields.';
+                    consultError.classList.remove('hidden');
+                    return;
+                }
+                
+                // Validate email format
+                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                    consultErrorMessage.textContent = 'Please enter a valid email address.';
+                    consultError.classList.remove('hidden');
+                    return;
+                }
+                
+                // Validate phone format (simple check for at least 10 digits)
+                const phoneDigits = phone.replace(/\D/g, '');
+                if (phoneDigits.length < 10) {
+                    consultErrorMessage.textContent = 'Please enter a valid phone number with at least 10 digits.';
+                    consultError.classList.remove('hidden');
+                    return;
+                }
+                
+                // If validation passes, show success message
+                consultSuccess.classList.remove('hidden');
+                consultationForm.reset();
+                
+                // Scroll to success message
+                consultSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                
+                // In a real implementation, you would send the form data to your server here
+                // For example:
+                // fetch('/submit-consultation', {
+                //     method: 'POST',
+                //     body: new FormData(consultationForm)
+                // })
+                // .then(response => response.json())
+                // .then(data => {
+                //     consultSuccess.classList.remove('hidden');
+                //     consultationForm.reset();
+                // })
+                // .catch(error => {
+                //     consultErrorMessage.textContent = 'There was an error submitting your request. Please try again later.';
+                //     consultError.classList.remove('hidden');
+                // });
+            });
+            
+            // Add animation classes to elements
+            const animateElements = document.querySelectorAll('.animate-in');
+            animateElements.forEach((el, index) => {
+                el.style.opacity = '0';
+            });
+            
+            // Trigger animations after a short delay
+            setTimeout(() => {
+                animateElements.forEach((el, index) => {
+                    el.classList.add('animate-in');
+                    if (index === 1) el.classList.add('delay-1');
+                    if (index === 2) el.classList.add('delay-2');
+                    if (index === 3) el.classList.add('delay-3');
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>
